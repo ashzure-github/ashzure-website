@@ -34,10 +34,6 @@ body {
   #header nav ul li a:hover {
     text-decoration: underline;
   }
-
-  .projects-dropdown-link {
-    
-  }
   
   #header-svg {
     height: 60px;
@@ -49,8 +45,7 @@ body {
     color: #4d5455;
     padding-bottom: 10px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     border-top: 4px solid;
     border-color: #ffa3bc;
@@ -111,18 +106,36 @@ body {
     }
   }
 
-  .post-container {
+  main {
     display: grid;
-    margin: auto;
+    grid-template-columns: 0.42fr 600px 0.16fr 600px 0.42fr;
+    grid-template-rows: 100px 600px 100px;
+    grid-template-areas:
+    ". .         . .          . "
+    ". left-post . right-post . "
+    ". .         . .          . ";
   }
 
-   /* Post styles */
   .post {
-    height: 600px; /* Adjust height as needed */
-    width: 600px;
     background-color: white;
     border: 5px solid #ffa3bc;
     border-radius: 5%;
-    padding: 20px; /* Add padding inside the post container */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    padding: 20px;
   }
+
+   /* Post styles */
+  .post:first-child {
+    grid-area: left-post;
+  }
+  .post:last-child {
+    grid-area: right-post;
+  }
+
+/* 
+  height: 600px;
+  width: 600px;
+  background-color: white;
+  border: 5px solid #ffa3bc;
+  border-radius: 5%;
+  padding: 20px;
+  box-sizing: border-box; */
