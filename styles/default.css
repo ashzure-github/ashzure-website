@@ -1,110 +1,116 @@
-/*most css is chatgpt work.*/
+/* Most CSS is ChatGPT work */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #afd2e9;
-}
-
-#header {
-  background-color: #fff;
-  color: hwb(0 50% 50%);
-  border-bottom: 4px solid;
-  border-color: #ffa3bc;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-#header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-#header nav ul li {
-  display: inline-block;
-
-}
-
-#header nav ul li a {
-  color: #808080;
-  text-decoration: none;
-}
-
-#header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-#header-svg {
-    height: 60px;
-    padding-top: 20px;
-}
-
-#footer {
-  background-color: #fff;
-  color: #4d5455;
-  padding-bottom: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-top: 4px solid;
-  border-color: #ffa3bc;
-}
-
-#main-content {
-  text-align: center;
-  /*opacity: 0;
-  animation: fadeInAnimation 2s ease-in forwards;*/
-}
-
-/* @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #afd2e9;
   }
-  100% {
-    opacity: 1;
-  }
-} /*
-
-/* Dropdown styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-link {
-  padding: 10px;
-  cursor: pointer; /* Change cursor to pointer to indicate clickability */
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 30px;
-  left: 50%; /* Adjusted to center the dropdown */
-  transform: translateX(-50%); /* Adjusted to center the dropdown */
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/*/post styles/*/
-
-.post {
+  
+  #header {
+    background-color: #fff;
+    color: hwb(0 50% 50%);
+    border-bottom: 4px solid;
+    border-color: #ffa3bc;
     text-align: center;
     height: 100%;
     width: 100%;
-}
+  }
+  
+  #header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #header nav ul li {
+    display: inline-block;
+  }
+  
+  #header nav ul li a {
+    color: #808080;
+    text-decoration: none;
+  }
+  
+  #header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  #header-svg {
+    height: 60px;
+    padding-top: 20px;
+  }
+  
+  #footer {
+    background-color: #fff;
+    color: #4d5455;
+    padding-bottom: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid;
+    border-color: #ffa3bc;
+  }
+  
+  #main-content {
+    text-align: center;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-link {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 30px;
+    left: -40px;
+    right: 0;
+    margin: auto; /* Center the dropdown content horizontally */
+    animation: rollDown 0.5s ease-in-out; /* Animation for roll-down effect */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Animation for roll-down effect */
+  @keyframes rollDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Post styles */
+  .post {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  
