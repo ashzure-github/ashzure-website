@@ -34,6 +34,10 @@ body {
   #header nav ul li a:hover {
     text-decoration: underline;
   }
+
+  .projects-dropdown-link {
+    
+  }
   
   #header-svg {
     height: 60px;
@@ -106,11 +110,19 @@ body {
       transform: translateY(0);
     }
   }
-  
-  /* Post styles */
-  .post {
-    text-align: center;
-    height: 100%;
-    width: 100%;
+
+  .post-container {
+    display: grid;
+    margin: auto;
   }
-  
+
+   /* Post styles */
+  .post {
+    height: 600px; /* Adjust height as needed */
+    width: 600px;
+    background-color: white;
+    border: 5px solid #ffa3bc;
+    border-radius: 5%;
+    padding: 20px; /* Add padding inside the post container */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
