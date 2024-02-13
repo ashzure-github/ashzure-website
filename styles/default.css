@@ -121,6 +121,12 @@ body {
     border: 5px solid #ffa3bc;
     border-radius: 5%;
     padding: 20px;
+    text-align: center;
+    color: gray;
+  }
+
+  .post h2 {
+    color: rgb(106, 106, 106);
   }
 
    /* Post styles */
@@ -131,6 +137,13 @@ body {
     grid-area: right-post;
   }
 
+  .post h2,h3 {
+    color:#ffa3bc;
+  }
+
+  .post a {
+    color: gray;
+  }
 /* 
   height: 600px;
   width: 600px;
